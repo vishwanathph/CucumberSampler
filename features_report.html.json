@@ -1,0 +1,107 @@
+[
+  {
+    "description": "  Addition is great as a verification exercise to get the Cucumber-js infrastructure up and running",
+    "keyword": "Feature",
+    "name": "Addition",
+    "line": 1,
+    "id": "addition",
+    "tags": [],
+    "uri": "features\\addition.feature",
+    "elements": [
+      {
+        "id": "addition;add-two-number",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Add two number",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the numbers 1 and 3",
+            "match": {
+              "location": "Philips\\Documents\\CucumberSampler\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "they are added together",
+            "match": {
+              "location": "Philips\\Documents\\CucumberSampler\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "should the result be 4",
+            "match": {
+              "location": "Philips\\Documents\\CucumberSampler\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    This feature check  whether the user had access to URL",
+    "keyword": "Feature",
+    "name": "CRUD API testing",
+    "line": 1,
+    "id": "crud-api-testing",
+    "tags": [],
+    "uri": "features\\getrequest.feature",
+    "elements": [
+      {
+        "id": "crud-api-testing;verify-get-url",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify GET URL",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to \"https://jsonplaceholder.typicode.com/\"",
+            "match": {
+              "location": "Philips\\Documents\\CucumberSampler\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "Philips\\Documents\\CucumberSampler\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

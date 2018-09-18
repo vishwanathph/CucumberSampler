@@ -10,6 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "cucumber": "^5.0.1",
+    "grunt": "^1.0.3",
+    "grunt-cucumberjs": "^2.0.2",
     "https-proxy-agent": "^2.2.1",
     "node-fetch": "^2.2.0"
   },
