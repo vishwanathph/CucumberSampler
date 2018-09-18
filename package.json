@@ -1,0 +1,19 @@
+{
+  "name": "cucumberpoc",
+  "version": "1.0.0",
+  "description": "This is a demo of API testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cucumber-js"
+  },
+  "author": "Vishwanath",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^5.0.1",
+    "https-proxy-agent": "^2.2.1",
+    "node-fetch": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
