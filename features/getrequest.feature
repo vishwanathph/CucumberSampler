@@ -1,7 +1,7 @@
-Feature: Url Access success 
+Feature: CRUD API testing
 
     This feature check  whether the user had access to URL
 
-Scenario: Verify top stories JSON schema
-  When I send a GET request to "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"
-  Then the response status should be 200
+Scenario: Verify GET URL
+  When I send a GET request to "https://jsonplaceholder.typicode.com/posts/1"
+  Then the response status should be 201

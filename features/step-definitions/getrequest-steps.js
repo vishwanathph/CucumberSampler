@@ -5,18 +5,22 @@ const HttpsProxyAgent = require('https-proxy-agent');
 
 let resp;
 
-When('I send a GET request to {string}', function (string) {
+When('I send a GET request to {string}', function (string,callback) {
         // Write code here that turns the phrase above into concrete actions
-        resp =  fetch(string,{ agent:new HttpsProxyAgent('http://165.225.104.34:9480')}).then();
+        fetch(string,{ agent:new HttpsProxyAgent('http://165.225.104.34:9480')})
+                .then(res=>{
+                    resp = res.status;
+                    callback();
+                });
+        
         
     
   });
 // Synchronous
 
 Then(/^the response status should be (.*)$/, function (status) {
-    resp.then(res => {
-        assert.equal(res.status, parseInt(status));
-    });
+        assert.equal(resp, parseInt(status));
+ 
 
     
 });
